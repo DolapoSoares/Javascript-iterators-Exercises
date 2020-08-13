@@ -85,18 +85,18 @@ var users = [
 
 //Write a function called findHometownByState which returns the first user which has a hometown of the state that is passed in
 
-function findHomeTownByState(arr){
+function findHomeTownByState(homeState){
   
     let state = [];
-    arr.forEach(function(obj){
-      if(obj.hometown.state === "CA"){
+    users.forEach(function(obj){
+      if(obj.hometown.state === homeState){
           console.log(state.push(obj));
       }
     })
   return state[0];
 }
 
-//console.log(findHomeTownByState(users));
+//console.log(findHomeTownByState("CA"));
 
 //Write a function called allLanguages which returns an array of all of the unique values
 
